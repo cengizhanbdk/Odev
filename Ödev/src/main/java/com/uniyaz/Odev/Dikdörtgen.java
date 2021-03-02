@@ -1,26 +1,28 @@
 package com.uniyaz.Odev;
 
-public class Dikdörtgen extends Sekil{
+public class Dikdörtgen {
 
-   private int kenar1;
-   private int kenar2;
+    private double kenar1;
+    private double kenar2;
 
-    public Dikdörtgen( int kenar1, int kenar2) {
-
+    public Dikdörtgen(double kenar1, double kenar2) {
         this.kenar1 = kenar1;
         this.kenar2 = kenar2;
     }
 
-    @Override
-    void alan_hesapla() {
-        System.out.println( (kenar1 * kenar2) );
 
+   public double alanHesapla() {
+       double alan1= (kenar1 * kenar2);
+       return alan1;
     }
 
-    @Override
-    void cevre_hesapla() {
 
-        System.out.println( (2 * (kenar1+kenar2)));
 
+    public double cevreHesapla() {
+        double cevre1= 2*(kenar1 + kenar2);
+        return cevre1;
     }
+
+
+
 }

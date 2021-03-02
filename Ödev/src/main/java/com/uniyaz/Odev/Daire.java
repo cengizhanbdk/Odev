@@ -2,27 +2,27 @@ package com.uniyaz.Odev;
 
 public class Daire extends Sekil{
 
-    private int yaricap;
+    private double yaricap;
 
-    public Daire(int yaricap) {
+    public double getYaricap() {
+        return yaricap;
+    }
 
+    public void setYaricap(double yaricap) {
         this.yaricap = yaricap;
+    }
+
+    @Override
+    double cevreHesapla(double yaricap) {
+       double cevre1=   (Math.PI * yaricap * 2);
+       return cevre1;
 
     }
 
     @Override
-    void alan_hesapla() {
-
-
-        System.out.println( (Math.PI * yaricap * yaricap));
+    double alanHesapla(double yaricap) {
+        double alan1=  (Math.PI * yaricap * yaricap);
+        return alan1;
 
     }
-
-    @Override
-    void cevre_hesapla() {
-        System.out.println((Math.PI*yaricap*yaricap));
-    }
-
-
 }
-
